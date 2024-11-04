@@ -1,60 +1,58 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Bobby',
+    lastName:  'Stearns',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Executive Chef',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Kansas City, MO',
+    languages: ['English', 'Spanish']  // Adjust as necessary
 }
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    title: <>Subscribe to Chef {person.firstName}'s Newsletter</>,
+    description: <>Join Chef Bobby's culinary journey to receive updates, recipes, and insights on the art of cooking and the latest trends in the culinary world.</>
 }
 
 const social = [
-    // Links are automatically displayed.
-    // Import new icons in /once-ui/icons.ts
     {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        name: 'Facebook',
+        icon: 'facebook',
+        link: 'https://www.facebook.com/BobbyStearnsChef',  // Update with actual link
     },
     {
-        name: 'LinkedIn',
-        icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        name: 'Instagram',
+        icon: 'instagram',
+        link: 'https://www.instagram.com/bobbystearnschef/',  // Update with actual link
     },
     {
-        name: 'X',
-        icon: 'x',
-        link: '',
+        name: 'Twitter',
+        icon: 'twitter',
+        link: 'https://twitter.com/bobbystearns',  // Update with actual link
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:bobbystearns@example.com',  // Update with actual email
     },
 ]
 
 const home = {
     label: 'Home',
-    title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    title: `${person.name}'s Culinary Portfolio`,
+    description: `Showcasing the creative work of Executive Chef ${person.name}`,
+    headline: <>Culinary Innovator and Creator</>,
+    subline: <>I'm Chef Bobby Stearns, a passionate Executive Chef at <InlineCode>Ophelia's</InlineCode> in Kansas City, where I create exceptional dining experiences.</>
 }
 
 const about = {
     label: 'About',
     title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    description: `Meet Chef ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -62,95 +60,62 @@ const about = {
     avatar: {
         display: true
     },
-    calendar: {
-        display: true,
-        link: 'https://cal.com'
-    },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Chef Bobby Stearns is known for his creativity and dedication to culinary excellence, transforming local ingredients into exquisite dishes that celebrate the flavors of Kansas City.</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Ophelia\'s',
+                timeframe: '2015 - Present',
+                role: 'Executive Chef',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Developed a menu that highlights seasonal ingredients and local producers, enhancing the dining experience.</>,
+                    <>Won the Culinary Fight Club's Steak Championship, showcasing innovative cooking techniques and presentation skills.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                images: []
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'The Capital Grille',
+                timeframe: '2010 - 2015',
+                role: 'Sous Chef',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Managed kitchen operations, ensuring the quality of food and presentation matched the restaurant’s high standards.</>,
+                    <>Trained and mentored junior chefs, contributing to a collaborative kitchen environment.</>
                 ],
-                images: [ ]
+                images: []
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
-        title: 'Studies',
+        display: true,
+        title: 'Culinary Education',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Culinary Institute of America',
+                description: <>Graduated with a degree in Culinary Arts.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Johnson County Community College',
+                description: <>Studied restaurant management and culinary techniques.</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
-        title: 'Technical skills',
+        display: true,
+        title: 'Culinary Skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Gastronomy',
+                description: <>Expert in French and modern American cuisine, specializing in fine dining.</>,
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Menu Development',
+                description: <>Skilled in creating innovative menus that reflect current culinary trends and seasonal ingredients.</>,
             }
         ]
     }
@@ -158,96 +123,41 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
+    title: 'Culinary Insights and Recipes',
+    description: `Read what ${person.name} has been cooking up recently and discover delicious recipes and cooking tips.`
 }
 
 const work = {
     label: 'Work',
-    title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
-    // Create new project pages by adding a new .mdx file to app/blog/posts
-    // All projects will be listed on the /home and /work routes
+    title: 'My Culinary Projects',
+    description: `Explore the culinary projects and initiatives by ${person.name}`
 }
 
 const gallery = {
     label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
+    title: 'My Culinary Creations',
+    description: `A collection of stunning dishes by ${person.name}`,
     images: [
         { 
-            src: '/images/gallery/img-01.jpg', 
-            alt: 'image',
+            src: '/images/gallery/dish-01.jpg', 
+            alt: 'Grilled Steak with Seasonal Vegetables',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/gallery/dish-02.jpg', 
+            alt: 'Gourmet Dessert Plating',
             orientation: 'vertical'
         },
         { 
-            src: '/images/gallery/img-02.jpg', 
-            alt: 'image',
+            src: '/images/gallery/dish-03.jpg', 
+            alt: 'Fresh Seafood Platter',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-03.jpg', 
-            alt: 'image',
+            src: '/images/gallery/dish-04.jpg', 
+            alt: 'Artisanal Bread Selection',
             orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-04.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-05.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-06.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-07.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-08.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-09.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-10.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-11.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-12.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-13.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/img-14.jpg', 
-            alt: 'image',
-            orientation: 'horizontal'
-        },
+        }
     ]
 }
 
