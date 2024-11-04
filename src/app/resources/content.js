@@ -6,15 +6,15 @@ const person = {
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Executive Chef',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'America/Chicago',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to {person.firstName}'s Newsletter</>,
+    title: <>Subscribe to Chef {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about culinary arts, share recipes, and explore the relationship between flavors and techniques in cooking.</>
 }
 
@@ -29,7 +29,7 @@ const social = [
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/robert-stearns-214311175',
     },
     {
         name: 'X',
@@ -45,10 +45,10 @@ const social = [
 
 const home = {
     label: 'Home',
-    title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    title: `${person.name}'s Culinary Portfolio`,
+    description: `Portfolio website showcasing my work as an ${person.role}`,
+    headline: <>Culinary artist and innovator</>,
+    subline: <>I'm Bobby, an Executive Chef creating unforgettable dining experiences at <InlineCode>Ophelia's</InlineCode>, where I blend tradition with modern flair.</>
 }
 
 const about = {
@@ -64,93 +64,72 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'https://cal.com/bobbystearns'
     },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Bobby Stearns is an Executive Chef based in Kansas City, passionate about transforming seasonal ingredients into exquisite culinary experiences. His work celebrates local flavors and innovative techniques.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Ophelia\'s',
+                timeframe: '2020 - Present',
+                role: 'Executive Chef',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Developed a seasonal menu that emphasizes local ingredients, increasing customer satisfaction and restaurant reviews.</>,
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
+                        src: '',
+                        alt: '',
                         width: 16,
                         height: 9
                     }
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Grand Street Cafe',
+                timeframe: '2015 - 2020',
+                role: 'Head Chef',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Assisted in managing kitchen operations, leading to an increase in efficiency during peak service hours.</>,
+                    <>Designed and implemented a new dessert menu that boosted dessert sales.</>
                 ],
-                images: [ ]
+                images: []
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
-        title: 'Studies',
+        display: true,
+        title: 'Education',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Culinary Institute of Johnson County Community College',
+                description: <>Culinary Arts.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Kansas City Culinary School',
+                description: <>Completed an internship focused on fine dining service.</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
-        title: 'Technical skills',
+        display: true,
+        title: 'Culinary Skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Recipe Development',
+                description: <>Expert in creating and testing innovative recipes that highlight fresh, seasonal ingredients.</>,
+                images: []
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Menu Design',
+                description: <>Skilled in designing menus that reflect the concept and brand of the restaurant, focusing on sustainability and customer experience.</>,
+                images: []
             }
         ]
     }
@@ -158,24 +137,20 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: 'Writing about design and tech...',
-    description: `Read what ${person.name} has been up to recently`
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
+    title: 'Writing about culinary arts...',
+    description: `Read what ${person.name} has been cooking up recently`
 }
 
 const work = {
     label: 'Work',
-    title: 'My projects',
-    description: `Design and dev projects by ${person.name}`
-    // Create new project pages by adding a new .mdx file to app/blog/posts
-    // All projects will be listed on the /home and /work routes
+    title: 'My culinary projects',
+    description: `Culinary creations by ${person.name}`
 }
 
 const gallery = {
     label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
+    title: 'My food photography',
+    description: `A collection of food photography by ${person.name}`,
     // Images from https://pexels.com
     images: [
         { 
