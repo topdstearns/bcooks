@@ -14,8 +14,8 @@ const person = {
 
 const newsletter = {
     display: true,
-    title: <>Subscribe to Chef {person.firstName}'s Newsletter</>,
-    description: <>Join Chef Bobby's culinary journey to receive updates, recipes, and insights on the art of cooking and the latest trends in the culinary world.</>
+    title: <>Join Chef {person.firstName}'s Newsletter</>,
+    description: <>Subscribe to get updates on culinary adventures, exclusive recipes, and insights into the art of cooking and the latest culinary trends.</>
 }
 
 const social = [
@@ -43,16 +43,16 @@ const social = [
 
 const home = {
     label: 'Home',
-    title: `${person.name}'s Culinary Portfolio`,
-    description: `Showcasing the creative work of Executive Chef ${person.name}`,
-    headline: <>Culinary Innovator and Creator</>,
-    subline: <>I'm Chef Bobby Stearns, a passionate Executive Chef at <InlineCode>Ophelia's</InlineCode> in Kansas City, where I create exceptional dining experiences.</>
+    title: `${person.name}'s Culinary Showcase`,
+    description: `A portfolio website highlighting the creative culinary work of Executive Chef ${person.name}`,
+    headline: <>Culinary Artist and Innovator</>,
+    subline: <>I’m Chef Bobby Stearns, the Executive Chef at <InlineCode>Ophelia's</InlineCode> in Kansas City, where I craft unique and memorable dining experiences.</>
 }
 
 const about = {
     label: 'About',
     title: 'About me',
-    description: `Meet Chef ${person.name}, ${person.role} from ${person.location}`,
+    description: `Discover Chef ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -63,19 +63,19 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Chef Bobby Stearns is known for his creativity and dedication to culinary excellence, transforming local ingredients into exquisite dishes that celebrate the flavors of Kansas City.</>
+        description: <>Chef Bobby Stearns is celebrated for his innovative approach to cooking, turning fresh, local ingredients into stunning dishes that reflect the essence of Kansas City cuisine.</>
     },
     work: {
         display: true,
-        title: 'Work Experience',
+        title: 'Professional Experience',
         experiences: [
             {
                 company: 'Ophelia\'s',
                 timeframe: '2015 - Present',
                 role: 'Executive Chef',
                 achievements: [
-                    <>Developed a menu that highlights seasonal ingredients and local producers, enhancing the dining experience.</>,
-                    <>Won the Culinary Fight Club's Steak Championship, showcasing innovative cooking techniques and presentation skills.</>
+                    <>Crafted a menu emphasizing seasonal and locally sourced ingredients, enriching the culinary experience.</>,
+                    <>Secured a victory at the Culinary Fight Club's Steak Championship, demonstrating exceptional culinary skills and presentation.</>
                 ],
                 images: []
             },
@@ -84,8 +84,8 @@ const about = {
                 timeframe: '2010 - 2015',
                 role: 'Sous Chef',
                 achievements: [
-                    <>Managed kitchen operations, ensuring the quality of food and presentation matched the restaurant’s high standards.</>,
-                    <>Trained and mentored junior chefs, contributing to a collaborative kitchen environment.</>
+                    <>Oversaw kitchen operations, ensuring the highest quality of food and meticulous presentation.</>,
+                    <>Provided training and mentorship to junior chefs, fostering a collaborative and supportive kitchen environment.</>
                 ],
                 images: []
             }
@@ -97,11 +97,11 @@ const about = {
         institutions: [
             {
                 name: 'Culinary Institute of America',
-                description: <>Graduated with a degree in Culinary Arts.</>,
+                description: <>Earned a degree in Culinary Arts.</>,
             },
             {
                 name: 'Johnson County Community College',
-                description: <>Studied restaurant management and culinary techniques.</>,
+                description: <>Focused on restaurant management and advanced culinary techniques.</>,
             }
         ]
     },
@@ -110,12 +110,12 @@ const about = {
         title: 'Culinary Skills',
         skills: [
             {
-                title: 'Gastronomy',
-                description: <>Expert in French and modern American cuisine, specializing in fine dining.</>,
+                title: 'Culinary Techniques',
+                description: <>Expertise in French cuisine and modern American dishes, specializing in fine dining experiences.</>,
             },
             {
-                title: 'Menu Development',
-                description: <>Skilled in creating innovative menus that reflect current culinary trends and seasonal ingredients.</>,
+                title: 'Menu Innovation',
+                description: <>Experienced in designing innovative menus that showcase seasonal ingredients and culinary trends.</>,
             }
         ]
     }
@@ -124,19 +124,19 @@ const about = {
 const blog = {
     label: 'Blog',
     title: 'Culinary Insights and Recipes',
-    description: `Read what ${person.name} has been cooking up recently and discover delicious recipes and cooking tips.`
+    description: `Catch up with ${person.name}'s latest culinary creations, recipes, and cooking tips.`
 }
 
 const work = {
-    label: 'Work',
-    title: 'My Culinary Projects',
-    description: `Explore the culinary projects and initiatives by ${person.name}`
+    label: 'Projects',
+    title: 'Culinary Projects',
+    description: `Explore the culinary initiatives and projects led by ${person.name}`
 }
 
 const gallery = {
     label: 'Gallery',
     title: 'My Culinary Creations',
-    description: `A collection of stunning dishes by ${person.name}`,
+    description: `A showcase of beautiful dishes by ${person.name}`,
     images: [
         { 
             src: '/images/gallery/dish-01.jpg', 
