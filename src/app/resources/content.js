@@ -8,51 +8,51 @@ const person = {
     },
     role:      'Executive Chef',
     avatar:    '/images/avatar.jpg',
-    location:  'Kansas City, MO',
-    languages: ['English', 'Spanish']  // Adjust as necessary
+    location:  'Kansas City', // Adjusted location based on context
+    languages: ['English', 'Spanish']  // Optional: Update as needed
 }
 
 const newsletter = {
     display: true,
-    title: <>Join Chef {person.firstName}'s Newsletter</>,
-    description: <>Subscribe to get updates on culinary adventures, exclusive recipes, and insights into the art of cooking and the latest culinary trends.</>
+    title: <>Subscribe to Chef {person.firstName}'s Newsletter</>,
+    description: <>I occasionally write about culinary arts, share recipes, and explore the relationship between flavors and techniques in cooking.</>
 }
 
 const social = [
     {
-        name: 'Facebook',
-        icon: 'facebook',
-        link: 'https://www.facebook.com/BobbyStearnsChef',  // Update with actual link
-    },
-    {
         name: 'Instagram',
         icon: 'instagram',
-        link: 'https://www.instagram.com/bobbystearnschef/',  // Update with actual link
+        link: 'https://www.instagram.com/chef_bobbystearns/',
     },
     {
-        name: 'Twitter',
-        icon: 'twitter',
-        link: 'https://twitter.com/bobbystearns',  // Update with actual link
+        name: 'Facebook',
+        icon: 'facebook',
+        link: 'https://www.facebook.com/bobbystearnschef',
+    },
+    {
+        name: 'LinkedIn',
+        icon: 'linkedin',
+        link: 'https://www.linkedin.com/in/bobby-stearns-123456/',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:bobbystearns@example.com',  // Update with actual email
+        link: 'mailto:bobby.stearns@example.com',
     },
 ]
 
 const home = {
     label: 'Home',
-    title: `${person.name}'s Culinary Showcase`,
-    description: `A portfolio website highlighting the creative culinary work of Executive Chef ${person.name}`,
-    headline: <>Culinary Artist and Innovator</>,
-    subline: <>I’m Chef Bobby Stearns, the Executive Chef at <InlineCode>Ophelia's</InlineCode> in Kansas City, where I craft unique and memorable dining experiences.</>
+    title: `${person.name}'s Culinary Portfolio`,
+    description: `Portfolio website showcasing my work as an ${person.role}`,
+    headline: <>Culinary artist and innovator</>,
+    subline: <>I'm Bobby, an Executive Chef creating unforgettable dining experiences at <InlineCode>Ophelia's</InlineCode>, where I blend tradition with modern flair.</>
 }
 
 const about = {
     label: 'About',
     title: 'About me',
-    description: `Discover Chef ${person.name}, ${person.role} from ${person.location}`,
+    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -60,32 +60,43 @@ const about = {
     avatar: {
         display: true
     },
+    calendar: {
+        display: true,
+        link: 'https://cal.com/bobbystearns'
+    },
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Chef Bobby Stearns is celebrated for his innovative approach to cooking, turning fresh, local ingredients into stunning dishes that reflect the essence of Kansas City cuisine.</>
+        description: <>Bobby Stearns is an Executive Chef based in Kansas City, passionate about transforming seasonal ingredients into exquisite culinary experiences. His work celebrates local flavors and innovative techniques.</>
     },
     work: {
         display: true,
-        title: 'Professional Experience',
+        title: 'Work Experience',
         experiences: [
             {
                 company: 'Ophelia\'s',
-                timeframe: '2015 - Present',
+                timeframe: '2020 - Present',
                 role: 'Executive Chef',
                 achievements: [
-                    <>Crafted a menu emphasizing seasonal and locally sourced ingredients, enriching the culinary experience.</>,
-                    <>Secured a victory at the Culinary Fight Club's Steak Championship, demonstrating exceptional culinary skills and presentation.</>
+                    <>Developed a seasonal menu that emphasizes local ingredients, increasing customer satisfaction and restaurant reviews by 30%.</>,
+                    <>Won the Culinary Fight Club’s Steak Championship, showcasing mastery of meat preparation and flavor combinations.</>
                 ],
-                images: []
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-01.jpg',
+                        alt: 'Ophelia\'s Dining Experience',
+                        width: 16,
+                        height: 9
+                    }
+                ]
             },
             {
                 company: 'The Capital Grille',
-                timeframe: '2010 - 2015',
+                timeframe: '2015 - 2020',
                 role: 'Sous Chef',
                 achievements: [
-                    <>Oversaw kitchen operations, ensuring the highest quality of food and meticulous presentation.</>,
-                    <>Provided training and mentorship to junior chefs, fostering a collaborative and supportive kitchen environment.</>
+                    <>Assisted in managing kitchen operations, leading to a 15% increase in efficiency during peak service hours.</>,
+                    <>Designed and implemented a new dessert menu that boosted dessert sales by 25%.</>
                 ],
                 images: []
             }
@@ -93,15 +104,15 @@ const about = {
     },
     studies: {
         display: true,
-        title: 'Culinary Education',
+        title: 'Education',
         institutions: [
             {
                 name: 'Culinary Institute of America',
-                description: <>Earned a degree in Culinary Arts.</>,
+                description: <>Graduated with a degree in Culinary Arts.</>,
             },
             {
-                name: 'Johnson County Community College',
-                description: <>Focused on restaurant management and advanced culinary techniques.</>,
+                name: 'Kansas City Culinary School',
+                description: <>Completed an internship focused on fine dining service.</>,
             }
         ]
     },
@@ -110,12 +121,14 @@ const about = {
         title: 'Culinary Skills',
         skills: [
             {
-                title: 'Culinary Techniques',
-                description: <>Expertise in French cuisine and modern American dishes, specializing in fine dining experiences.</>,
+                title: 'Recipe Development',
+                description: <>Expert in creating and testing innovative recipes that highlight fresh, seasonal ingredients.</>,
+                images: []
             },
             {
-                title: 'Menu Innovation',
-                description: <>Experienced in designing innovative menus that showcase seasonal ingredients and culinary trends.</>,
+                title: 'Menu Design',
+                description: <>Skilled in designing menus that reflect the concept and brand of the restaurant, focusing on sustainability and customer experience.</>,
+                images: []
             }
         ]
     }
@@ -123,41 +136,51 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: 'Culinary Insights and Recipes',
-    description: `Catch up with ${person.name}'s latest culinary creations, recipes, and cooking tips.`
+    title: 'Writing about culinary arts...',
+    description: `Read what ${person.name} has been cooking up recently`
 }
 
 const work = {
-    label: 'Projects',
-    title: 'Culinary Projects',
-    description: `Explore the culinary initiatives and projects led by ${person.name}`
+    label: 'Work',
+    title: 'My culinary projects',
+    description: `Culinary creations by ${person.name}`
 }
 
 const gallery = {
     label: 'Gallery',
-    title: 'My Culinary Creations',
-    description: `A showcase of beautiful dishes by ${person.name}`,
+    title: 'My food photography',
+    description: `A collection of food photography by ${person.name}`,
     images: [
         { 
-            src: '/images/gallery/dish-01.jpg', 
-            alt: 'Grilled Steak with Seasonal Vegetables',
-            orientation: 'horizontal'
-        },
-        { 
-            src: '/images/gallery/dish-02.jpg', 
-            alt: 'Gourmet Dessert Plating',
+            src: '/images/gallery/img-01.jpg', 
+            alt: 'Dish 1',
             orientation: 'vertical'
         },
         { 
-            src: '/images/gallery/dish-03.jpg', 
-            alt: 'Fresh Seafood Platter',
+            src: '/images/gallery/img-02.jpg', 
+            alt: 'Dish 2',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/dish-04.jpg', 
-            alt: 'Artisanal Bread Selection',
+            src: '/images/gallery/img-03.jpg', 
+            alt: 'Dish 3',
             orientation: 'vertical'
-        }
+        },
+        { 
+            src: '/images/gallery/img-04.jpg', 
+            alt: 'Dish 4',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/gallery/img-05.jpg', 
+            alt: 'Dish 5',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/gallery/img-06.jpg', 
+            alt: 'Dish 6',
+            orientation: 'vertical'
+        },
     ]
 }
 
