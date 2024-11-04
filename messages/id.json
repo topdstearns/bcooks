@@ -1,81 +1,84 @@
 {
     "person": {
-        "role": "Insinyur Desain"
+        "firstName": "Bobby",
+        "lastName": "Stearns",
+        "role": "Executive Chef",
+        "location": "Kansas City"
     },
     "newsletter": {
-        "title": "Langganan Buletin {firstName}",
-        "description": "Saya sesekali menulis tentang desain, teknologi, dan berbagi pemikiran tentang persimpangan kreativitas dan rekayasa",
-        "button": "Daftar"
+        "title": "Subscribe to Bobby's Culinary Newsletter",
+        "description": "Join my newsletter for updates on seasonal recipes, cooking tips, and exclusive insights into my culinary creations. Discover the art of cooking with me!",
+        "button": "Sign Up"
     },
     "home": {
-        "label": "Beranda",
-        "title": "Portofolio {name}",
-        "description": "Situs web portofolio yang menampilkan karya saya sebagai {role}",
-        "headline": "Insinyur desain dan pembangun",
-        "subline": "Saya Selene, seorang insinyur desain di FLY, di mana saya membuat pengalaman pengguna yang intuitif. Setelah jam kerja, saya mengerjakan proyek-proyek pribadi."
+        "label": "Home",
+        "title": "Bobby Stearns' Culinary Portfolio",
+        "description": "Welcome to my portfolio showcasing my work as an Executive Chef.",
+        "headline": "Crafting Unforgettable Culinary Experiences",
+        "subline": "I am Bobby Stearns, an Executive Chef in Kansas City, passionate about creating unique dishes that combine local flavors and culinary techniques."
     },
     "about": {
-        "label": "Tentang",
-        "title": "Tentang Saya",
-        "description": "Kenali {name}, {role} dari {location}",
+        "label": "About",
+        "title": "About Me",
+        "description": "Meet Bobby Stearns, Executive Chef from Kansas City.",
         "intro": {
-            "title": "Pengantar",
-            "description": "Selene adalah seorang insinyur desain yang berbasis di Jakarta dengan hasrat untuk mengubah tantangan kompleks menjadi solusi desain yang sederhana dan elegan. Karyanya meliputi antarmuka digital, pengalaman interaktif, dan pertemuan antara desain dan teknologi."
+            "title": "Introduction",
+            "description": "Bobby Stearns is an Executive Chef with over two decades of experience in the culinary field. Known for his innovative approaches, Bobby combines local ingredients with modern techniques to create dishes that are both flavorful and visually appealing."
         },
         "work": {
-            "title": "Pengalaman Kerja",
+            "title": "Work Experience",
             "experiences": {
-                "FLY": {
-                    "timeframe": "2022 - Sekarang",
-                    "role": "Senior Design Engineer",
-                    "achievements": "Mendesain ulang UI/UX untuk platform FLY, menghasilkan peningkatan keterlibatan pengguna sebesar 20% dan waktu muat lebih cepat sebesar 30%.;Memimpin integrasi alat AI ke dalam alur kerja desain, memungkinkan desainer untuk iterasi 50% lebih cepat."
+                "Ophelia's Restaurant": {
+                    "timeframe": "Present",
+                    "role": "Executive Chef",
+                    "achievements": "Winner of the Culinary Fight Club's Steak Championship; known for crafting a menu that highlights local and seasonal ingredients."
                 },
-                "Creativ3": {
-                    "timeframe": "2018 - 2022",
-                    "role": "Desainer Utama",
-                    "achievements": "Mengembangkan sistem desain yang menyatukan merek di berbagai platform, meningkatkan konsistensi desain sebesar 40%.;Memimpin tim lintas fungsi untuk meluncurkan lini produk baru, berkontribusi pada peningkatan pendapatan perusahaan sebesar 15%."
+                "Grand Street Cafe": {
+                    "timeframe": "2014 - 2020",
+                    "role": "Head Chef",
+                    "achievements": "Successfully launched a seasonal menu that increased customer satisfaction and loyalty, contributing to the restaurant's growth."
                 }
             }
         },
         "studies": {
-            "title": "Pendidikan",
+            "title": "Education",
             "institutions": {
-                "University of Jakarta": {
-                    "description": "Belajar teknik perangkat lunak."
+                "Culinary Institute of America": {
+                    "description": "Studied culinary arts with a focus on classical and innovative cooking techniques."
                 },
-                "Build the Future": {
-                    "description": "Belajar pemasaran online dan personal branding."
+                "Kansas City Community College": {
+                    "description": "Learned restaurant management and marketing, preparing for a successful career in the culinary industry."
                 }
             }
         },
         "technical": {
-            "title": "Kemampuan Teknis",
+            "title": "Culinary Skills",
             "skills": {
-                "Figma": {
-                    "description": "Mampu membuat prototipe di Figma dengan Once UI dengan kecepatan luar biasa."
+                "Menu Development": {
+                    "description": "Expert in creating engaging and delicious menus that utilize seasonal ingredients."
                 },
-                "Nextjs": {
-                    "description": "Membangun aplikasi generasi berikutnya dengan Next.js + Once UI + Supabase."
+                "Team Leadership": {
+                    "description": "Proficient in leading kitchen teams with creativity and efficiency to ensure a harmonious work environment."
                 }
             }
         }
     },
     "blog": {
         "label": "Blog",
-        "title": "Menulis tentang desain dan teknologi...",
-        "description": "Baca apa yang {name} lakukan baru-baru ini"
+        "title": "Culinary Insights and Recipes...",
+        "description": "Read about my latest culinary adventures and discover new recipes and cooking techniques."
     },
     "work": {
-        "label": "Karya",
-        "title": "Proyek Saya",
-        "description": "Proyek desain dan pengembangan oleh {name}"
+        "label": "Work",
+        "title": "My Culinary Projects",
+        "description": "Explore the culinary projects and menu designs I have developed throughout my career."
     },
     "gallery": {
-        "label": "Galeri",
-        "title": "Galeri Foto Saya",
-        "description": "Koleksi foto oleh {name}"
+        "label": "Gallery",
+        "title": "My Photo Gallery",
+        "description": "A collection of photographs showcasing my culinary creations and experiences in the kitchen."
     },
     "projectCard": {
-        "label": "Baca Studi Kasus"
+        "label": "Read Case Study"
     }
 }
