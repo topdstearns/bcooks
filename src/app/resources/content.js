@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Culinary Portfolio`,
     description: `Portfolio website showcasing my work as an ${person.role}`,
     headline: <>Culinary artist and innovator</>,
-    subline: <>I'm Bobby, an Executive Chef creating unforgettable dining experiences at <InlineCode>Ophelia's</InlineCode>, where I blend tradition with modern flair.</>
+    subline: <>I'm Bobby Stearns, an Executive Chef creating unforgettable dining experiences at <InlineCode>Ophelia's</InlineCode>, where I blend tradition with modern flair.</>
 }
 
 const about = {
