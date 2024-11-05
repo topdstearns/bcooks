@@ -8,7 +8,7 @@ const person = {
     },
     role:      'Executive Chef',
     avatar:    '/images/avatar.jpg',
-    location:  'America/Kansas City',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    location:  'America/Chicago',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
     languages: ['English']  // optional: Leave the array empty if you don't want to display languages
 }
 
