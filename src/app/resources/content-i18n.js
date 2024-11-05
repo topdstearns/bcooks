@@ -104,8 +104,8 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
-                    description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
+                    name: 'Johnson County Community College',
+                    description: <>{t(`about.studies.institutions.Johnson County Community College.description`)}</>,
                 },
                 {
                     name: 'Build the Future',
